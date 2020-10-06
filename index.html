@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Registration Form</title>
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+</head>
+<body>
+<div class="container col-md-3">
+	<form>
+		<h3 align="center">Cadet Registration Form</h3>
+
+  <div class="form-group-row">
+    <label for="ocno" >OC No</label>
+    <input type="number" class="form-control" name="ocno" required>
+    <label for="ocname">OC Name</label>
+	<input type="text" class="form-control" name="ocname" required>
+	<label for="fname">Father Name</label>
+	<input type="text" name="fname" class="form-control" required>
+	<label>Sex</label>
+	<div class="radio">
+  	<label><input type="radio" name="optradio" checked> Male</label>
+	</div>
+	<div class="radio">
+  	<label><input type="radio" name="optradio"> Female</label>
+	</div>
+  	<label for="comment">Present Address</label>
+ 	<textarea class="form-control" rows="3" id="comment" required></textarea>
+
+</div>
+<div class="form-group">
+	
+
+	<label for="sel1">Course</label>
+  	<select class="form-control" id="sel1">
+    <option>79</option>
+    <option>80</option>
+    <option>81</option>
+    <option>82</option>
+    <option>83</option>
+    <option>84</option>
+  </select>
+  <label for="sel1">Email Id</label>
+  <input id="email" type="email" class="form-control" name="email" required>
+  <label for="birthday">DOB</label>
+  <input type="date" id="birthday" name="birthday" class="form-control" required>
+
+  <label for="mobileno">Mobile No</label>
+    <input type="tel" class="form-control" name="mobileno" pattern="[0-9]{11}" required>
+</div>
+ 
+  
+  <button type="reset" class="btn btn-danger">Reset</button>
+  <button type="submit" class="btn btn-primary">Submit Form</button>
+
+</form>
+</div>
+
+
+
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+</body>
+</html>
